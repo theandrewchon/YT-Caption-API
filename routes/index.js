@@ -11,6 +11,8 @@ router.get('/api/:id', async (req, res) => {
 		lang: 'ko', // default: `en`
 	}).then(function (captions) {
 		res.json(captions);
+	}).catch((error) => {
+		res.status(400).json({message: error.message})
 	});
 });
 
