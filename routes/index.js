@@ -12,7 +12,7 @@ router.get('/api/:id', async (req, res) => {
 	}).then(function (captions) {
 		res.json(captions);
 	}).catch((error) => {
-		res.status(400).json({message: error.message})
+		res.status(400).json({type: "error", message: error.message})
 	});
 });
 

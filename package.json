@@ -19,6 +19,7 @@
 	},
 	"homepage": "https://github.com/theandrewchon/YT-Caption-API#readme",
 	"dependencies": {
+		"cors": "^2.8.5",
 		"express": "^4.17.1",
 		"youtube-captions-scraper": "^1.0.3"
 	},
@@ -26,6 +27,6 @@
 		"nodemon": "^2.0.4"
 	},
 	"engines": {
-    "node": "12.x"
-  }
+		"node": "12.x"
+	}
 }
